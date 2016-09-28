@@ -14,21 +14,21 @@ public extension UIColor {
     
     // MARK: Generating colors
     
-    public var go: GOColor {
+    public var go: GoUIColor {
         get {
-            return GOColor(color: self)
+            return GoUIColor(color: self)
         }
     }
     
-    public static var go: GOColor {
+    public static var go: GoUIColor {
         get {
-            return GOColor()
+            return GoUIColor()
         }
     }
     
 }
 
-public struct GOColor {
+public struct GoUIColor {
     
     private var color: UIColor?
     

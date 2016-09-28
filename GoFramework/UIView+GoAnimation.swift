@@ -9,20 +9,44 @@
 import UIKit
 
 
-extension UIView {
+public extension UIView {
     
-    func scaleBounce(duration duration: CFTimeInterval = 1) {
+    
+    // MARK: Generating objects
+    
+    public var go: GoUIView {
+        get {
+            return GoUIView(object: self)
+        }
+    }
+    
+}
+
+
+public struct GoUIView {
+    
+    private var object: UIView
+    
+    init(object: UIView) {
+        self.object = object
+    }
+    
+    
+    
+    // MARK: Animations
+    
+    func scaleBounce(duration: CFTimeInterval = 1) {
         UIView.animate(withDuration: (duration / 2), delay: 0, options: .allowUserInteraction, animations: {
             let t: CGAffineTransform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-            self.transform = t
+            self.object.transform = t
         }) { (completed) in
             UIView.animate(withDuration: ((duration / 2) / 2), delay: 0, options: .allowUserInteraction, animations: {
                 let t: CGAffineTransform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                self.transform = t
+                self.object.transform = t
             }) { (completed) in
                 UIView.animate(withDuration: ((duration / 2) / 2), delay: 0, options: .allowUserInteraction, animations: {
                     let t: CGAffineTransform = CGAffineTransform(scaleX: 1, y: 1)
-                    self.transform = t
+                    self.object.transform = t
                 }) { (completed) in
                     
                 }
@@ -30,8 +54,8 @@ extension UIView {
         }
     }
     
-    func startRotation(duration duration: CFTimeInterval = 1, repeatCount: Float = Float.infinity, clockwise: Bool = true) {
-        if self.layer.animation(forKey: "transform.rotation.z") != nil {
+    func startRotation(duration: CFTimeInterval = 1, repeatCount: Float = Float.infinity, clockwise: Bool = true) {
+        if self.object.layer.animation(forKey: "transform.rotation.z") != nil {
             return
         }
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -41,11 +65,14 @@ extension UIView {
         animation.isCumulative = true
         animation.repeatCount = repeatCount
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        self.layer.add(animation, forKey:"transform.rotation.z")
+        self.object.layer.add(animation, forKey:"transform.rotation.z")
     }
     
     func stopRotation() {
-        self.layer.removeAnimation(forKey: "transform.rotation.z")
+        self.object.layer.removeAnimation(forKey: "transform.rotation.z")
     }
     
 }
+
+
+
