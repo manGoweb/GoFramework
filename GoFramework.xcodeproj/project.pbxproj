@@ -10,6 +10,11 @@
 		15F2E91D1D9AE24B0083642A /* GoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F2E9131D9AE24B0083642A /* GoFramework.framework */; };
 		15F2E9221D9AE24B0083642A /* GoFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9211D9AE24B0083642A /* GoFrameworkTests.swift */; };
 		15F2E9241D9AE24B0083642A /* GoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F2E9161D9AE24B0083642A /* GoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F2E9331D9AE3710083642A /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9321D9AE3710083642A /* GoViewController.swift */; };
+		15F2E9351D9AE54E0083642A /* GoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9341D9AE54E0083642A /* GoView.swift */; };
+		15F2E93D1D9AE6B20083642A /* UIColor+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E93C1D9AE6B20083642A /* UIColor+Go.swift */; };
+		15F2E93F1D9BA62D0083642A /* Date+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E93E1D9BA62D0083642A /* Date+Go.swift */; };
+		15F2E9411D9BA85B0083642A /* UIView+GoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9401D9BA85B0083642A /* UIView+GoAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		15F2E91C1D9AE24B0083642A /* GoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F2E9211D9AE24B0083642A /* GoFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoFrameworkTests.swift; sourceTree = "<group>"; };
 		15F2E9231D9AE24B0083642A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F2E9321D9AE3710083642A /* GoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
+		15F2E9341D9AE54E0083642A /* GoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoView.swift; sourceTree = "<group>"; };
+		15F2E93C1D9AE6B20083642A /* UIColor+Go.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Go.swift"; sourceTree = "<group>"; };
+		15F2E93E1D9BA62D0083642A /* Date+Go.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Go.swift"; sourceTree = "<group>"; };
+		15F2E9401D9BA85B0083642A /* UIView+GoAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GoAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		15F2E9151D9AE24B0083642A /* GoFramework */ = {
 			isa = PBXGroup;
 			children = (
+				15F2E9311D9AE3500083642A /* Extensions */,
+				15F2E92F1D9AE3320083642A /* Views */,
+				15F2E9301D9AE3390083642A /* View controllers */,
 				15F2E9161D9AE24B0083642A /* GoFramework.h */,
 				15F2E9171D9AE24B0083642A /* Info.plist */,
 			);
@@ -84,6 +97,32 @@
 				15F2E9231D9AE24B0083642A /* Info.plist */,
 			);
 			path = GoFrameworkTests;
+			sourceTree = "<group>";
+		};
+		15F2E92F1D9AE3320083642A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15F2E9341D9AE54E0083642A /* GoView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		15F2E9301D9AE3390083642A /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15F2E9321D9AE3710083642A /* GoViewController.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		15F2E9311D9AE3500083642A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15F2E93C1D9AE6B20083642A /* UIColor+Go.swift */,
+				15F2E93E1D9BA62D0083642A /* Date+Go.swift */,
+				15F2E9401D9BA85B0083642A /* UIView+GoAnimation.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +187,7 @@
 				TargetAttributes = {
 					15F2E9121D9AE24B0083642A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					15F2E91B1D9AE24B0083642A = {
@@ -196,6 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F2E9351D9AE54E0083642A /* GoView.swift in Sources */,
+				15F2E93D1D9AE6B20083642A /* UIColor+Go.swift in Sources */,
+				15F2E93F1D9BA62D0083642A /* Date+Go.swift in Sources */,
+				15F2E9331D9AE3710083642A /* GoViewController.swift in Sources */,
+				15F2E9411D9BA85B0083642A /* UIView+GoAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +365,7 @@
 		15F2E9281D9AE24B0083642A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +385,7 @@
 		15F2E9291D9AE24B0083642A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +404,7 @@
 		15F2E92B1D9AE24B0083642A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GoFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFrameworkTests;
@@ -367,6 +416,7 @@
 		15F2E92C1D9AE24B0083642A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GoFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFrameworkTests;
@@ -394,6 +444,7 @@
 				15F2E9291D9AE24B0083642A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15F2E92A1D9AE24B0083642A /* Build configuration list for PBXNativeTarget "GoFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +453,7 @@
 				15F2E92C1D9AE24B0083642A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
