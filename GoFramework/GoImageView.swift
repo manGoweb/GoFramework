@@ -1,15 +1,15 @@
 //
-//  GoView.swift
+//  GoImageView.swift
 //  GoFramework
 //
-//  Created by Ondrej Rafaj on 27/09/2016.
+//  Created by Ondrej Rafaj on 07/10/2016.
 //  Copyright © 2016 Ondrej Rafaj. All rights reserved.
 //
 
 import UIKit
 
 
-open class GoView: UIView {
+open class GoImageView: UIImageView {
     
     
     // MARK: Layout
@@ -34,7 +34,23 @@ open class GoView: UIView {
         self.init(frame:CGRect.zero)
     }
     
-    required override public init (frame: CGRect) {
+    override public init(image: UIImage?) {
+        super.init(image: image)
+        
+        self.configure()
+        self.configureElements()
+        self.layoutElements()
+    }
+    
+    override public init(image: UIImage?, highlightedImage: UIImage?) {
+        super.init(image: image, highlightedImage: highlightedImage)
+        
+        self.configure()
+        self.configureElements()
+        self.layoutElements()
+    }
+    
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         self.configure()

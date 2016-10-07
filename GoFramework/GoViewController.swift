@@ -47,7 +47,7 @@ open class GoViewController: UIViewController {
     
     // MARK: Initialization
     
-    required public init() {
+    public init() {
         super.init(nibName: nil, bundle: nil)
         
         self.configure()

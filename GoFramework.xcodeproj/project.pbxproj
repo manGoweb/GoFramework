@@ -16,6 +16,7 @@
 		15F2E93F1D9BA62D0083642A /* Date+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E93E1D9BA62D0083642A /* Date+Go.swift */; };
 		15F2E9411D9BA85B0083642A /* UIView+GoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9401D9BA85B0083642A /* UIView+GoAnimation.swift */; };
 		15F2E9431D9BDE320083642A /* Any+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9421D9BDE320083642A /* Any+Go.swift */; };
+		15F83EFC1DA7F9D30068996B /* GoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F83EFB1DA7F9D30068996B /* GoImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		15F2E93E1D9BA62D0083642A /* Date+Go.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Go.swift"; sourceTree = "<group>"; };
 		15F2E9401D9BA85B0083642A /* UIView+GoAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GoAnimation.swift"; sourceTree = "<group>"; };
 		15F2E9421D9BDE320083642A /* Any+Go.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Any+Go.swift"; sourceTree = "<group>"; };
+		15F83EFB1DA7F9D30068996B /* GoImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		15F2E92F1D9AE3320083642A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				15F83EFB1DA7F9D30068996B /* GoImageView.swift */,
 				15F2E9341D9AE54E0083642A /* GoView.swift */,
 			);
 			name = Views;
@@ -242,6 +245,7 @@
 				15F2E9431D9BDE320083642A /* Any+Go.swift in Sources */,
 				15F2E9351D9AE54E0083642A /* GoView.swift in Sources */,
 				15F2E93D1D9AE6B20083642A /* UIColor+Go.swift in Sources */,
+				15F83EFC1DA7F9D30068996B /* GoImageView.swift in Sources */,
 				15F2E93F1D9BA62D0083642A /* Date+Go.swift in Sources */,
 				15F2E9331D9AE3710083642A /* GoViewController.swift in Sources */,
 				15F2E9411D9BA85B0083642A /* UIView+GoAnimation.swift in Sources */,
