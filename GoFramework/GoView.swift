@@ -30,11 +30,11 @@ open class GoView: UIView {
         
     }
     
-    convenience init() {
+    convenience public init() {
         self.init(frame:CGRect.zero)
     }
     
-    override init (frame: CGRect) {
+    required override public init (frame: CGRect) {
         super.init(frame: frame)
         
         self.configure()

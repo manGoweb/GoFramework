@@ -24,10 +24,16 @@ open class GoViewController: UIViewController {
         
     }
     
-    // MARK: Creating elements
+    // MARK: Subviews
     
     open func configureElements() {
         
+    }
+    
+    open func addChildViewControllerView(_ childController: UIViewController) {
+        self.addChildViewController(childController)
+        self.view.addSubview(childController.view)
+        childController.didMove(toParentViewController: self)
     }
     
     // MARK: View lifecycle
