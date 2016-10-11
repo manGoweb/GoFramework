@@ -17,18 +17,38 @@ public enum GoDateFormat: String {
 public extension Date {
     
     
+    // MARK: Generating objects
+    
+    public var go: GoDate {
+        get {
+            return GoDate(object: self)
+        }
+    }
+    
+}
+
+public class GoDate {
+    
+    
+    private var object: Date
+    
+    init(object: Date) {
+        self.object = object
+    }
+    
+    
     // MARK: Formatting
     
     public func toString(withFormat format: String) -> String {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = format
-        return formatter.string(from: self)
+        return formatter.string(from: self.object)
     }
     
     public func toString(withGoFormat format: GoDateFormat) -> String {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = format.rawValue
-        return formatter.string(from: self)
+        return formatter.string(from: self.object)
     }
     
 }

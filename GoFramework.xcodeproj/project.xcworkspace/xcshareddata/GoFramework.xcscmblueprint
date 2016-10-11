@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0128EE2F730F85E2D657838A68C6E28C7A41857B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0128EE2F730F85E2D657838A68C6E28C7A41857B" : 9223372036854775807,
+    "421B63033928AF382C188A3B3E0493F6C07793C7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9FBB1D25-F6E0-4656-85E1-7C56A0442C8C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0128EE2F730F85E2D657838A68C6E28C7A41857B" : "GoFramework\/",
+    "421B63033928AF382C188A3B3E0493F6C07793C7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GoFramework",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GoFramework.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:manGoweb\/GoFramework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0128EE2F730F85E2D657838A68C6E28C7A41857B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:manGoweb\/CelebrityKeyboard.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "421B63033928AF382C188A3B3E0493F6C07793C7"
+    }
+  ]
+}

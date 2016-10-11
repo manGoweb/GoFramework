@@ -32,7 +32,6 @@ public struct GoUIView {
     }
     
     
-    
     // MARK: Animations
     
     func scaleBounce(duration: CFTimeInterval = 1) {
