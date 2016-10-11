@@ -29,4 +29,5 @@ public struct GoString {
     public var localized: String {
         return NSLocalizedString(string, comment: "")
     }
+    
 }
