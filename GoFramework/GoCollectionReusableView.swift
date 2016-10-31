@@ -3,7 +3,7 @@
 //  GoFramework
 //
 //  Created by Ondrej Rafaj on 11/10/2016.
-//  Copyright © 2016 Ondrej Rafaj. All rights reserved.
+//  Copyright © 2016 manGoweb UK Ltd. All rights reserved.
 //
 
 import UIKit
