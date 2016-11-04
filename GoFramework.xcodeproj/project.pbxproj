@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150F55E51DCCA68100813F27 /* GoFrameworkTv.h in Headers */ = {isa = PBXBuildFile; fileRef = 150F55E31DCCA68100813F27 /* GoFrameworkTv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		150F55EE1DCCA6E300813F27 /* UIColor+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E93C1D9AE6B20083642A /* UIColor+Go.swift */; };
+		150F55EF1DCCA6E300813F27 /* Date+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E93E1D9BA62D0083642A /* Date+Go.swift */; };
+		150F55F01DCCA6E300813F27 /* String+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A88896F1DAD0DBA0066DFA2 /* String+Go.swift */; };
+		150F55F11DCCA6E300813F27 /* UIView+GoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9401D9BA85B0083642A /* UIView+GoAnimation.swift */; };
+		150F55F21DCCA6E300813F27 /* Any+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9421D9BDE320083642A /* Any+Go.swift */; };
+		150F55F31DCCA6E300813F27 /* NSObject+Go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A76F5861DBF53D90074A15F /* NSObject+Go.swift */; };
+		150F55F41DCCA6E300813F27 /* GoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F83EFB1DA7F9D30068996B /* GoImageView.swift */; };
+		150F55F51DCCA6E300813F27 /* GoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9341D9AE54E0083642A /* GoView.swift */; };
+		150F55F61DCCA6E300813F27 /* GoCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8A3E81DACDFCC007A5DAC /* GoCollectionReusableView.swift */; };
+		150F55F71DCCA6E300813F27 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9321D9AE3710083642A /* GoViewController.swift */; };
 		15F2E91D1D9AE24B0083642A /* GoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F2E9131D9AE24B0083642A /* GoFramework.framework */; };
 		15F2E9221D9AE24B0083642A /* GoFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F2E9211D9AE24B0083642A /* GoFrameworkTests.swift */; };
 		15F2E9241D9AE24B0083642A /* GoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F2E9161D9AE24B0083642A /* GoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150F55E11DCCA68000813F27 /* GoFrameworkTv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoFrameworkTv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		150F55E31DCCA68100813F27 /* GoFrameworkTv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoFrameworkTv.h; sourceTree = "<group>"; };
+		150F55E41DCCA68100813F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F2E9131D9AE24B0083642A /* GoFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F2E9161D9AE24B0083642A /* GoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoFramework.h; sourceTree = "<group>"; };
 		15F2E9171D9AE24B0083642A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		150F55DD1DCCA68000813F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15F2E90F1D9AE24B0083642A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,11 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150F55E21DCCA68100813F27 /* GoFrameworkTv */ = {
+			isa = PBXGroup;
+			children = (
+				150F55E31DCCA68100813F27 /* GoFrameworkTv.h */,
+				150F55E41DCCA68100813F27 /* Info.plist */,
+			);
+			path = GoFrameworkTv;
+			sourceTree = "<group>";
+		};
 		15F2E9091D9AE24B0083642A = {
 			isa = PBXGroup;
 			children = (
 				15F2E9151D9AE24B0083642A /* GoFramework */,
 				15F2E9201D9AE24B0083642A /* GoFrameworkTests */,
+				150F55E21DCCA68100813F27 /* GoFrameworkTv */,
 				15F2E9141D9AE24B0083642A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +115,7 @@
 			children = (
 				15F2E9131D9AE24B0083642A /* GoFramework.framework */,
 				15F2E91C1D9AE24B0083642A /* GoFrameworkTests.xctest */,
+				150F55E11DCCA68000813F27 /* GoFrameworkTv.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +175,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		150F55DE1DCCA68000813F27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F55E51DCCA68100813F27 /* GoFrameworkTv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15F2E9101D9AE24B0083642A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +194,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		150F55E01DCCA68000813F27 /* GoFrameworkTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150F55E81DCCA68100813F27 /* Build configuration list for PBXNativeTarget "GoFrameworkTv" */;
+			buildPhases = (
+				150F55DC1DCCA68000813F27 /* Sources */,
+				150F55DD1DCCA68000813F27 /* Frameworks */,
+				150F55DE1DCCA68000813F27 /* Headers */,
+				150F55DF1DCCA68000813F27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoFrameworkTv;
+			productName = GoFrameworkTv;
+			productReference = 150F55E11DCCA68000813F27 /* GoFrameworkTv.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		15F2E9121D9AE24B0083642A /* GoFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F2E9271D9AE24B0083642A /* Build configuration list for PBXNativeTarget "GoFramework" */;
@@ -200,6 +258,10 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ondrej Rafaj";
 				TargetAttributes = {
+					150F55E01DCCA68000813F27 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					15F2E9121D9AE24B0083642A = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
@@ -224,12 +286,20 @@
 			projectRoot = "";
 			targets = (
 				15F2E9121D9AE24B0083642A /* GoFramework */,
+				150F55E01DCCA68000813F27 /* GoFrameworkTv */,
 				15F2E91B1D9AE24B0083642A /* GoFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		150F55DF1DCCA68000813F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15F2E9111D9AE24B0083642A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +317,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		150F55DC1DCCA68000813F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F55F51DCCA6E300813F27 /* GoView.swift in Sources */,
+				150F55EE1DCCA6E300813F27 /* UIColor+Go.swift in Sources */,
+				150F55F61DCCA6E300813F27 /* GoCollectionReusableView.swift in Sources */,
+				150F55F21DCCA6E300813F27 /* Any+Go.swift in Sources */,
+				150F55F71DCCA6E300813F27 /* GoViewController.swift in Sources */,
+				150F55F11DCCA6E300813F27 /* UIView+GoAnimation.swift in Sources */,
+				150F55F41DCCA6E300813F27 /* GoImageView.swift in Sources */,
+				150F55F01DCCA6E300813F27 /* String+Go.swift in Sources */,
+				150F55EF1DCCA6E300813F27 /* Date+Go.swift in Sources */,
+				150F55F31DCCA6E300813F27 /* NSObject+Go.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15F2E90E1D9AE24B0083642A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +370,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		150F55E61DCCA68100813F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GoFrameworkTv/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFramework.Tv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		150F55E71DCCA68100813F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GoFrameworkTv/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFramework.Tv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 		15F2E9251D9AE24B0083642A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +524,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +545,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.manGoweb.GoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,6 +581,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		150F55E81DCCA68100813F27 /* Build configuration list for PBXNativeTarget "GoFrameworkTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150F55E61DCCA68100813F27 /* Debug */,
+				150F55E71DCCA68100813F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		15F2E90D1D9AE24B0083642A /* Build configuration list for PBXProject "GoFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
