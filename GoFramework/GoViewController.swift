@@ -19,7 +19,7 @@ open class GoViewController: UIViewController {
     }
     
     // MARK: Configuration
-    
+        
     open func configure() {
         
     }
